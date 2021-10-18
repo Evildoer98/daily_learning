@@ -1,0 +1,34 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Evildoer98
+ * @Date: 2021-10-18 21:18:35
+ * @LastEditors: Evildoer98
+ * @LastEditTime: 2021-10-18 21:22:48
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.0-beta.7/vue.cjs.js"></script>
+</head>
+<body>
+    <div id = "app">
+        <div v-if='istrue'>
+            <h1 v-for='n in arr'>{{n}}</h1>
+        </div>
+    </div>
+    <script>
+        new Vue ({
+            el: '#app',
+            data: {
+                arr: ['Hello', 'My', 'Name', 'is', 'Evildoer'],
+                istrue: false
+            }
+        })
+    </script>
+</body>
+</html>
