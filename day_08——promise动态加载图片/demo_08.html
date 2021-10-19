@@ -1,0 +1,41 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Evildoer98
+ * @Date: 2021-10-19 23:44:39
+ * @LastEditors: Evildoer98
+ * @LastEditTime: 2021-10-19 23:53:05
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function asyncLoaderImage (_url) {
+            return new Promise((resolve, reject) => {
+                let _div = document.createElement('div')
+                document.body.appendChild(_div)
+
+                const _img = new Image()
+                _img.onload = resolve;
+                _img.onerror = reject
+                _img.src = _url
+
+                _div.appendChild(_img)
+            })
+        }
+        let _imageUrl = 'https://c-ssl.duitang.com/uploads/item/201506/04/20150604225316_MLxcm.jpeg'
+        asyncLoaderImage(_imageUrl).then( () => {
+            console.log('加载成功');
+        }).catch((err) => {
+            console.log(err);
+        })
+    </script>   
+</body>
+</html>
