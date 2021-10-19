@@ -4,7 +4,7 @@
  * @Author: Evildoer98
  * @Date: 2021-10-19 23:56:12
  * @LastEditors: Evildoer98
- * @LastEditTime: 2021-10-20 00:10:20
+ * @LastEditTime: 2021-10-20 00:11:53
 -->
 
 
@@ -30,7 +30,7 @@ export default {
         //     console.log(_d);
         // })
         let _url = 'http://localhost:3344/getList'
-        let _getData = ajaxRequest(_url)
+        let _getData = ajaxRequest(_url, {a: 'Evildoer'})
         _getData.then( _d => {
             console.log(_d);
         }, err=> {
