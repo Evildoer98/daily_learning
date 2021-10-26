@@ -4,14 +4,17 @@
  * @Author: Evildoer98
  * @Date: 2021-10-23 16:07:44
  * @LastEditors: Evildoer98
- * @LastEditTime: 2021-10-23 16:26:39
+ * @LastEditTime: 2021-10-26 20:59:27
 -->
+
 <template>
-  <div>{{ msg }}</div>
-  <button @click="isTrue = !isTrue"></button>
-  <div v-if="isTrue"> 
-      <!-- <a/> -->
-      <Async_a/>
+  <div>
+    <div>{{ msg }}</div>
+    <button @click="isTrue = !isTrue"></button>
+    <div v-if="isTrue"> 
+        <!-- <a/> -->
+        <Async_a/>
+    </div>
   </div>
 </template>
 <script>
