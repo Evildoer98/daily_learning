@@ -4,7 +4,7 @@
  * @Author: Evildoer98
  * @Date: 2021-10-26 22:20:38
  * @LastEditors: Evildoer98
- * @LastEditTime: 2021-10-26 22:27:12
+ * @LastEditTime: 2021-10-27 00:21:31
 -->
 
 <template>
@@ -13,6 +13,35 @@
     <chidlren>
       <p>Hello World</p>
     </chidlren>
+    <!-- 使用具名插槽 -->
+    <children>这是父组件传入的值</children>
+
+    <!-- 使用具名插槽,可以使用#代替v-slot -->
+    <children>
+      <template #h_1>
+        <p>这是h_1的内容</p>
+      </template>
+
+      <template v-slot:h_2>
+        <p>这是h_2的内容</p>
+      </template>
+
+      <template v-slot:h_3>
+        <p>这是h_3的内容</p>
+      </template>
+    </children>
+
+    <!-- 使用作用域插槽 -->
+    <children>
+      <template v-slot:n_str="strProps"> 
+        {{strProps.str.name}}
+      </template>
+      <template v-slot:l_str="strProps"> 
+        {{strProps.str.name}}
+      </template>
+    </children>
+
+    
   </div>
 
 </template>
