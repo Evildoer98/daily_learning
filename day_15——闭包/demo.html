@@ -1,0 +1,38 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Evildoer98
+ * @Date: 2021-10-27 21:19:17
+ * @LastEditors: Evildoer98
+ * @LastEditTime: 2021-10-27 21:25:39
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function fn1 () {
+      let n = 123
+      return function () {
+        console.log(n);  // 123
+      }
+    }
+    // 这个被 return 返回的匿名函数，它就是闭包
+    console.log(fn1());
+
+    // 将堆内存中对这个函数的引用存在这个变量里面
+    let _fn1 = fn1()
+    _fn1() // 123
+
+
+    fn1()
+    console.log(n);
+  </script>
+</body>
+</html>
