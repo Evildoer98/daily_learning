@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 主线程
+    console.log(111);
+
+    // 异步
+    setTimeout(() => {
+      console.log(222);
+    }, 1000);
+
+    // 异步
+    new Promise((resolve) => {
+      resolve()
+      console.log(333);
+    }).then(()=>{
+      console.log(444);
+    }).finally(()=>{
+      console.log(555);
+    })
+
+    console.log(666);
+
+    // 111
+    // 333
+    // 666
+    // 444
+    // 555
+    // 222
+
+  </script>
+</body>
+</html>
