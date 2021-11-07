@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      background: #ddd;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+  <script>
+    // 2
+    let _div = document.getElementById('demo')
+    _div.innerHTML = 'I,m Evildoer98'
+
+    new Promise((resolve, reject)=> {
+      resolve()
+    }).then(()=>{
+      alert('微任务')   // 1   异步，微任务
+    })
+
+    // 3   异步，宏任务
+    setTimeout(() => {
+      console.log('宏任务');
+      _div.innerHTML = '宏任务来了'  
+    }, 3000);
+  </script>
+</body>
+</html>
