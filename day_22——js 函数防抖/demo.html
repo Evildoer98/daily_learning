@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="btnId" type="button" value="add按钮">
+  <h2 id="numId">数字</h2>
+
+  <script>
+    let _btn = document.getElementById('btnId')
+    let _n = document.getElementById('numId')
+    let _m = 0
+    let t
+    _btn.onclick = function () {
+      console.log('xxxx');
+      // 重制回初始化的状态
+      clearTimeout(t)
+      t = setTimeout(() => {
+        _n.innerHTML = ++_m
+      }, 1000);
+      
+    }
+
+  </script>
+</body>
+</html>
