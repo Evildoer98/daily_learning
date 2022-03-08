@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Evildoer98
  * @Date: 2021-10-18 21:13:59
  * @LastEditors: Evildoer98
@@ -16,4 +16,3 @@ vue 中，v-if 和 v-for 不能同时使用？
 解决方案：
     1. 把 v-if 写在外层 dom 中
     2. 把 v-if 卸载外层 template 中
-    
