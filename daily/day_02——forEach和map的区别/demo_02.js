@@ -1,7 +1,7 @@
 // forEach
 let arr1 =[3, 4, 5]
 let _n = arr1.forEach((item, index, input) => {
-    console.log(item, index, input); 
+    console.log(item, index, input);
     // a, 0, [3, 4, 5]
     // b, 1, [3, 4, 5]
     // c, 2, [3, 4, 5]

@@ -1,6 +1,6 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Evildoer98
  * @Date: 2021-10-13 23:15:16
  * @LastEditors: Evildoer98
@@ -8,7 +8,7 @@
  */
 
 async function fn2() {
-    return 1 
+    return 1
 }
 
 function fn3 () {
@@ -51,7 +51,7 @@ a()  // c
  * await b() 会暂停它所在的那个 async 函数的执行
  * 等到异步的b函数执行结束之后
  * 再执行c
- * 
+ *
  * b 函数左边有 async 关键字，所以b() 返回一个 promise 对象
  * 所以 await 等到的就会是一个 promise 对象
  * 而 await 就会阻塞后面的代码，等这个 promise 对象 resolve
@@ -60,17 +60,17 @@ a()  // c
 
 /**
  * await 比 .then 好在哪里呢？
- * 
+ *
  * await 不用保存当前的堆栈信息
  * 因为在执行 b 函数的时候，a函数暂停了，它的作用域还在
  */
 
 /**
  * await 必须在 async 里面的原因
- * 
+ *
  * async 内部的阻塞都在 promise 对象中异步执行了
  * async 直接返回一个 promise 对象
- * 
+ *
  */
 
 

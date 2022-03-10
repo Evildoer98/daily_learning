@@ -1,11 +1,12 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Evildoer98
  * @Date: 2021-10-14 23:38:04
  * @LastEditors: Evildoer98
  * @LastEditTime: 2021-10-14 23:50:54
 -->
+#
 
 1. async 函数，返回一个 promise 对象
     如果在函数中 return 一个直接量
