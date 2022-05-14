@@ -130,8 +130,8 @@
 
 ## 私有 property 名称
 
-1. why:
-2. what:
-3. do it happen:
-4. don‘t do it happen:
-5. notice:
+1. why: 避免与其他正在使用以及将要使用的 property 名称冲突
+2. what: 将 property 命名的更细节
+3. do it happen: 将自定义的 property 私有化, 避免与内置的 property 冲突
+4. don‘t do it happen: 可能覆盖实例 property
+5. notice: 尽量使用特有性质的名称, 确保不会重复
