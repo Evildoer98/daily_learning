@@ -14,4 +14,26 @@
 4. don‘t do it happen: 文件目录结构混乱, 维护性差
 5. notice:
 
+## 单文件组件文件的大小写
 
+1. why:
+2. what: 单文件组件的文件名应该要么始终是单词大写开头 (PascalCase)，要么始终是横线连接 (kebab-case)
+3. do it happen:
+4. don‘t do it happen:
+5. notice: 在
+
+## 基础组件名称
+
+1. why:
+2. what: 应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 Base、App 或 V。
+3. do it happen:
+4. don‘t do it happen:
+5. notice:
+
+## 单例组件名称
+
+1. why:
+2. what:
+3. do it happen:
+4. don‘t do it happen:
+5. notice:
