@@ -108,36 +108,29 @@
 2. what: 组件模版应该只包含简单的表达式，复杂的表达式应该重构为计算属性或方法
 3. do it happen: 使用计算属性或者方法使得代码可复用
 4. don‘t do it happen:
-5. notice:
+5. notice: 复杂的表达式可以使用计算属性或者方法
 
-##
+## 简单的计算属性
 
 1. why:
-2. what:
+2. what: 应该把复杂计算属性尽可能多地分割为更简单的计算属性
+3. do it happen: 更易于测试、更易于阅读、更好地“拥抱变化”
+4. don‘t do it happen:
+5. notice:
+
+## 带引号的 attribute 值
+
+1. why:
+2. what: 非空 HTML attribute 的值应该始终带有引号 (单引号或双引号，选择未在 JS 里面使用的那个)
 3. do it happen:
 4. don‘t do it happen:
 5. notice:
 
-##
+## 指令缩写
 
 1. why:
-2. what:
+2. what: 指令缩写 (用 : 表示 v-bind:，@ 表示 v-on: 和用 # 表示 v-slot) 应该要么始终使用，要么始终不使用
 3. do it happen:
 4. don‘t do it happen:
 5. notice:
 
-##
-
-1. why:
-2. what:
-3. do it happen:
-4. don‘t do it happen:
-5. notice:
-
-##
-
-1. why:
-2. what:
-3. do it happen:
-4. don‘t do it happen:
-5. notice:
