@@ -100,7 +100,7 @@
    1. 使用 CSS scope 规范
 
       ```vue
-        <style scope>
+        <style scoped>
         ...
         </style>
       ```
